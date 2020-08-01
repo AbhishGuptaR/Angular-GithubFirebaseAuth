@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col col-6 offset-3">
+      <div class="card">
+        <div class="card-header text-center text-info text-uppercase">
+          Signup to Use
+        </div>
+
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-group row">
+              <label for="email" class="col-sm-3 col-form-label">Email</label>
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  ngModel
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-3 col-form-label"
+                >Password</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  id="password"
+                  ngModel
+                  placeholder="Enter password"
+                  required
+                />
+                <small id="emailhelp" class="form-text text-muted">
+                  Password should be 6 characters or more.</small
+                >
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
